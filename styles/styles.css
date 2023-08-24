@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;400;600&family=Rubik:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #090542;
+    --cor-secundaria: #035AA6; 
+    --cor-terciaria: #40BAD5;
+    --cor-quartiaria: #faec69;
+    --cor-neutra: #f7f3d0;
+    --cor-destaque: #FCBF1E;
+    --fonte-primaria: 'Rubik', sans-serif;
+    --fonte-secundaria: 'Montserrat Alternates', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+}
+
+.cabecalho__menu__link__destaque {
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-destaque);
+}
+
+.cabecalho__menu__link:hover {
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-quartiaria);
+    transform: scale(1.01);
+}
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-quartiaria);
+}
+
+.titulo-destaque {
+    color: var(--cor-destaque);
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-neutra);
+}
+
+.apresentacao__conteudo__texto__menor {
+    font-size: 1.25rem;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-neutra);
+}
+
+
+.apresentacao__conteudo__texto a{
+    text-decoration: none;
+    color: var(--cor-quartiaria);
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    color: var(--cor-quartiaria);
+}
+
+.apresentacao__links__subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentacao__links__navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    font-size: 24px;
+    width: 50%;
+    padding: 21.5px 0;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--cor-quartiaria);    
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    border: 2px solid var(--cor-terciaria);
+}
+
+.apresentacao__links__navegacao:hover {
+    border: 2px solid var(--cor-destaque);  
+    transform: scale(1.01);
+}
+
+.apresentacao__imagem {
+    width: 35%;
+    border-radius: 02%;
+}
+
+.rodape {
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 15px;
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: center;    
+}
+
+.rodape__logotipos {
+    width: 06%;
+    height: 06%;
+}
+
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+}
+
+/* FORMULÁRIO DE CONTATO */
+
+.form {
+    width: 512px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    font-size: 1.2rem;
+    margin-bottom: 2%;
+}
+
+.form input {
+    height: 25px;
+}
+
+.form input, .form textarea {
+    background-color: var(--cor-neutra);
+    border: 1px solid var(--cor-quartiaria);
+    border-radius: 10px;
+    padding: 01%;
+    margin-bottom: 05%;
+}
+
+.form input:focus, .form textarea:focus {
+    outline: 1px solid var(--cor-destaque);
+}
+
+.form button {
+    height: 3.5rem;
+    background-color: var(--cor-destaque);
+    color: var(--cor-primaria);
+    border: 1px solid var(--cor-destaque);
+    border-radius: 10px;
+}
+
+.form button:hover {
+    transform: scale(1.01);
+    font-weight: 600;
+}

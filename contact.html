@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alisson Perantoni Guigen - Contato</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.svg">
+</head>
+<body>
+    <header class="cabecalho">
+       <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="skills.html">Habilidades</a>
+            <a class="cabecalho__menu__link__destaque">Contato</a>
+        </nav> 
+    </header>
+    
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo">Entre em <strong class="titulo-destaque">contato comigo:</strong></h1>
+            
+            <form class="form" action="https://formsubmit.co/aliperantoni@gmail.com" method="POST">
+
+              <label for="nome" class="apresentacao__conteudo__texto__menor">Nome</label>              
+              <input type="text" name="name" id="nome" placeholder="Preencha seu Nome" required>
+              
+              <label for="email" class="apresentacao__conteudo__texto__menor">E-mail</label>
+              <input type="email" name="email" id="email" placeholder="Insira seu e-mail" required>
+
+              <label for="textarea" class="apresentacao__conteudo__texto__menor">Mensagem</label>
+              <textarea name="message" id="textarea" cols="30" rows="05" placeholder="Escreva sua mensagem"></textarea>
+              
+              <button type="submit" class="apresentacao__conteudo__texto__menor">Enviar</button>
+         </form>
+
+
+        </section>
+    <img class="apresentacao__imagem" src="/assets/foto_perfil.png" alt="Foto Alisson Perantoni Guigen">        
+    </main>
+
+    <footer class="rodape">
+        <img src="assets/Logo_Alura_Include.svg" alt="Logotipo Alura Include">
+        <img class="rodape__logotipos" src="assets/logosenac.png" alt="Logotipo do Senac">
+        <p>Desenvolvido por Alisson Perantoni Guigen</p>
+    </footer>
+
+</body>
+</html>
