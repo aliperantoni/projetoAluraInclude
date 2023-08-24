@@ -71,28 +71,37 @@ body {
     gap: 40px;
 }
 
-.apresentacao__conteudo__titulo {
-    font-size: 2.25rem;
+/*.titulo {
+    font-size: 2.15rem;
     font-family: var(--fonte-primaria);
+    color: var(--cor-quartiaria);
+} */
+
+.titulo-destaque {
+    font-size: 2.15rem;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-destaque);
+} 
+
+.parte-amarela {
     color: var(--cor-quartiaria);
 }
 
-.titulo-destaque {
+.parte-laranja {
     color: var(--cor-destaque);
 }
 
 .apresentacao__conteudo__texto {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: var(--fonte-secundaria);
     color: var(--cor-neutra);
 }
 
-.apresentacao__conteudo__texto__menor {
-    font-size: 1.25rem;
+.texto__menor {
+    font-size: 1.10rem;
     font-family: var(--fonte-secundaria);
     color: var(--cor-neutra);
 }
-
 
 .apresentacao__conteudo__texto a{
     text-decoration: none;
@@ -189,8 +198,10 @@ body {
 }
 
 .form label {
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-quartiaria);
     font-size: 1.2rem;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
 
 .form input {
@@ -202,7 +213,7 @@ body {
     border: 1px solid var(--cor-quartiaria);
     border-radius: 10px;
     padding: 01%;
-    margin-bottom: 05%;
+    margin-bottom: 03%;
 }
 
 .form input:focus, .form textarea:focus {
@@ -213,6 +224,8 @@ body {
     height: 3.5rem;
     background-color: var(--cor-destaque);
     color: var(--cor-primaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.2rem;
     border: 1px solid var(--cor-destaque);
     border-radius: 10px;
 }
