@@ -149,17 +149,19 @@ body {
     border-radius: 02%;
 }
 
+/* RODAPÉ */
+
 .rodape {
     display: flex;    
     align-items: center;
     justify-content: center;
-    gap: 20%;
+    gap: 15%;
     color: var(--cor-primaria);
     background-color: var(--cor-terciaria);
     padding: 15px;
     font-family: var(--fonte-secundaria);
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 0.85rem;
     text-align: center;    
 }
 
@@ -168,26 +170,6 @@ body {
     height: 06%;
 }
 
-
-@media (max-width: 1200px) {
-    .cabecalho {
-        padding: 10%;
-    }
-
-    .cabecalho__menu {
-        justify-content: center;
-    }
-
-    .apresentacao {
-        flex-direction: column-reverse;
-        padding: 5%;
-    }
-
-    .apresentacao__conteudo {
-        width: auto;
-    }
-
-}
 
 /* FORMULÁRIO DE CONTATO */
 
