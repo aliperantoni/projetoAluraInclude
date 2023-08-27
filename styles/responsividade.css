@@ -1,19 +1,133 @@
-@media (max-width: 1200px) {
-    .cabecalho {
-        padding: 10%;
-    }
+/* GERAL */
 
-    .cabecalho__menu {
-        justify-content: center;
-    }
+@media (max-width: 1024px) {
+  .cabecalho {
+    padding: 07%;
+  }
 
-    .apresentacao {
-        flex-direction: column-reverse;
-        padding: 5%;
-    }
+  .apresentacao {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
 
-    .apresentacao__conteudo {
-        width: auto;
-    }
+  .form {
+    width: 100%;
+  }
+}
 
+/* CELULARES */
+
+@media (max-width: 720px) {
+  .cabecalho__menu,
+  .cabecalho__menu__link,
+  .cabecalho__menu__link__destaque {
+    justify-content: center;
+    gap: 05%;
+    font-size: 1.2rem;
+  }
+
+  .titulo-destaque {
+    font-size: 1.75rem;
+  }
+
+  .apresentacao__conteudo {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .apresentacao__links__subtitulo,
+  .apresentacao__links__navegacao {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+
+  .rodape {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: wrap-reverse;
+    gap: 30%;
+    padding-bottom: 05%;
+  }
+
+  .rodape p {
+    font-size: 1.15rem;
+    width: 85%;
+    align-items: center;
+    margin-bottom: 03%;
+    margin-top: 03%;
+  }
+
+  .rodape__destaque {
+    font-weight: 600;
+  }
+
+  .rodape__logotipos {
+    width: 15%;
+    height: 15%;
+  }
+}
+
+/* TABLETS */
+@media (min-width: 720px) and (max-width: 1024px) {
+  .cabecalho__menu,
+  .cabecalho__menu__link,
+  .cabecalho__menu__link__destaque {
+    justify-content: center;
+    gap: 10%;
+    font-size: 2rem;
+  }
+
+  .apresentacao {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+
+  .titulo-destaque {
+    font-size: 3rem;
+  }
+
+  .apresentacao__conteudo,
+  .texto__menor {
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .enfase {
+    font-size: 2.5rem;
+  }
+
+  .apresentacao__links__subtitulo,
+  .apresentacao__links__navegacao {
+    font-size: 2.2rem;
+  }
+  .rodape {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: wrap-reverse;
+    gap: 30%;
+    padding-bottom: 02%;
+    margin-bottom: 0;
+  }
+
+  .rodape p {
+    font-size: 1.5rem;
+    width: 85%;
+    align-items: center;
+    margin-bottom: 03%;
+    margin-top: 03%;
+  }
+
+  .rodape__destaque {
+    font-weight: 600;
+  }
+
+  .rodape__logotipos {
+    width: 15%;
+    height: 15%;
+    padding: 02%;
+  }
 }
