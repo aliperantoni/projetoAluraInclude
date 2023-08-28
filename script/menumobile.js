@@ -10,7 +10,7 @@ buttonMenu.addEventListener("click", function () {
     : menuMobile.classList.remove("invisivel");
 
   isMenuOpen
-    ? buttonMenu.children[0].setAttribute("src", "https://aliperantoni.github.io/assets/openMenu.svg")
+    ? buttonMenu.children[0].setAttribute("src", "https://github.com/aliperantoni/projetoAluraInclude/blob/main/assets/openMenu.svg")
     : buttonMenu.children[0].setAttribute("src", "https://aliperantoni.github.io/assets/closeMenu.svg");
 
   isMenuOpen = !isMenuOpen;
