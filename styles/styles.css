@@ -22,13 +22,26 @@ body {
   color: var(--cor-secundaria);
 }
 
+.menu__list--mobile {
+  display: none;
+}
+
 .cabecalho {
   padding: 2% 0% 0% 15%;
+  position: relative;
 }
 
 .cabecalho__menu {
   display: flex;
   gap: 80px;
+}
+
+.menu__list {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  list-style: none;
 }
 
 .cabecalho__menu__link {
@@ -126,6 +139,7 @@ body {
   font-family: var(--fonte-primaria);
   font-weight: 400;
   border: 2px solid var(--cor-terciaria);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .apresentacao__links__navegacao:hover {

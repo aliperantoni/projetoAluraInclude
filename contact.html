@@ -10,12 +10,47 @@
   </head>
   <body>
     <header class="cabecalho">
-      <nav class="cabecalho__menu">
-        <a class="cabecalho__menu__link" href="index.html">Home</a>
-        <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-        <a class="cabecalho__menu__link" href="skills.html">Habilidades</a>
-        <a class="cabecalho__menu__link__destaque">Contato</a>
+      <div class="container">
+        <nav class="cabecalho__menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="cabecalho__menu__link" href="index.html">Home</a>
+            </li>
+            <li class="menu__item">
+              <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+            </li>
+            <li class="menu__item">
+              <a class="cabecalho__menu__link" href="skills.html"
+                >Habilidades</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="cabecalho__menu__link__destaque">Contato</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <nav class="menuMobile invisivel">
+        <ul class="menu__list--mobile">
+          <li class="menu__item">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+          </li>
+          <li class="menu__item">
+            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+          </li>
+          <li class="menu__item">
+            <a class="cabecalho__menu__link" href="skills.html">Habilidades</a>
+          </li>
+          <li class="menu__item">
+            <a class="cabecalho__menu__link__destaque">Contato</a>
+          </li>
+        </ul>
       </nav>
+
+      <button class="button__menu">
+        <img src="./assets/openMenu.svg" alt="Ícone de menu" />
+      </button>
     </header>
 
     <main class="apresentacao">
@@ -93,5 +128,6 @@
     </footer>
 
     <script src="./script/main.js"></script>
+    <script src="./script/menumobile.js"></script>
   </body>
 </html>
